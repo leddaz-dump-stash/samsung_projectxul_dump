@@ -1,0 +1,10 @@
+<permissions>
+    <privapp-permissions package="com.samsung.android.watch.alarm">
+	<permission name="com.samsung.android.permisson.ACCESS_SYSTEM_KEY_DISPATCHING"/>
+	<permission name="android.permission.LOCAL_MAC_ADDRESS"/>
+	<permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+	<permission name="android.permission.STOP_APP_SWITCHES"/>
+	<permission name="com.samsung.android.wear.retailmode.permission.RETAILMODE"/>
+	<permission name="android.permission.ACTIVITY_RECOGNITION"/>
+    </privapp-permissions>
+</permissions>

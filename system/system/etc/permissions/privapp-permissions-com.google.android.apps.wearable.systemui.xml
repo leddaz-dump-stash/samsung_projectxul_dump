@@ -1,0 +1,17 @@
+<permissions>
+    <privapp-permissions package="com.google.android.apps.wearable.systemui">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="com.google.android.clockwork.systemui.CONTROL_QUICKPANEL" />
+        <permission name="android.permission.GET_APP_OPS_STATS" />
+        <permission name="android.permission.BATTERY_STATS" />
+        <permission name="android.permission.INTERACT_ACROSS_USERS" />
+        <permission name="android.permission.READ_FRAME_BUFFER" />
+        <permission name="com.samsung.android.permission.SSRM_NOTIFICATION_PERMISSION" />
+        <permission name="com.samsung.android.wearable.sysui.permission.SET_EMERGENCY_WATCH" />
+        <permission name="android.permission.BLUETOOTH_PRIVILEGED" />
+        <permission name="com.samsung.android.wear.retailmode.permission.RETAILMODE"/>
+        <permission name="com.samsung.android.permission.RECEIVE_LOCK_TASK_MODE_CHANGED"/>
+        <permission name="android.permission.MANAGE_NOTIFICATIONS"/>
+        <permission name="com.samsung.watch.numbersync.PROVIDER"/>
+    </privapp-permissions>
+</permissions>

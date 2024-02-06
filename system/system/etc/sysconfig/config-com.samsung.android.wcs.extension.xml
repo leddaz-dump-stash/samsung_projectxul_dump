@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<apps-extralist>
+		<package name="com.samsung.android.honeyboard" />
+		<package name="com.samsung.android.wear.samsungvoiceinput" />
+		<package name="com.samsung.accessibility" />
+		<package name="com.samsung.android.watch.runestone.app" />
+		<package name="com.samsung.SMT" />
+		<package name="com.samsung.android.watch.stf" />
+		<package name="com.samsung.android.service.health" />
+	</apps-extralist>
+</config>

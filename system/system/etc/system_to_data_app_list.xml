@@ -1,0 +1,15 @@
+<packages>
+    <package name="com.samsung.android.calendar"/>
+    <package name="com.samsung.android.app.reminder"/>
+    <package name="com.samsung.android.watch.findmyphone"/>
+    <package name="com.samsung.android.samsungpay.gear"/>
+    <package name="com.samsung.android.watch.alarm"/>
+    <package name="com.samsung.android.watch.stopwatch"/>
+    <package name="com.samsung.android.watch.timer"/>
+    <package name="com.samsung.android.watch.worldclock"/>
+    <package name="com.samsung.android.wear.shealth"/>
+    <package name="com.samsung.android.watch.weather"/>
+	<package name="com.samsung.android.watch.cameracontroller"/>
+    <package name="com.samsung.android.watch.samsungcompass"/>
+    <package name="com.samsung.android.mediacontroller"/>
+</packages>

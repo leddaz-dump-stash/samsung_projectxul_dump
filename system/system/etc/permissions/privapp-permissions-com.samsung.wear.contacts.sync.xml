@@ -1,0 +1,8 @@
+<permissions>
+	<privapp-permissions package="com.samsung.wear.contacts.sync">
+	<!--Add protected permissions for contacts sync here -->
+	<permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+	<permission name="android.permission.WRITE_SETTINGS"/>
+	<permission name="android.permission.MODIFY_PHONE_STATE"/>	
+	</privapp-permissions>
+</permissions>

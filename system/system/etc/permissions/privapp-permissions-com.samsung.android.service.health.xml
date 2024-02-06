@@ -1,0 +1,5 @@
+<permissions>
+    <privapp-permissions package="com.samsung.android.service.health">
+		<permission name="android.permission.GET_ACCOUNTS_PRIVILEGED"/>
+    </privapp-permissions>
+</permissions>

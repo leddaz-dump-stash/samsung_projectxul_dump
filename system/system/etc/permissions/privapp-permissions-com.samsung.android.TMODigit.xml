@@ -1,0 +1,10 @@
+<permissions>
+    <privapp-permissions package="com.samsung.android.TMODigit">
+
+    <!--Add protected permissions for TMODigits here -->
+       <permission name="android.permission.MODIFY_PHONE_STATE"/>
+       <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+	   <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+	   <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+</permissions>

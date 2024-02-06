@@ -1,0 +1,17 @@
+<permissions>
+<privapp-permissions package="com.samsung.android.watch.safety_assistance">  
+	<permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" />
+	<permission name="android.permission.ANSWER_PHONE_CALLS" />
+	<permission name="android.permission.MODIFY_PHONE_STATE" />
+	<permission name="android.permission.ACCESS_FINE_LOCATION" />
+	<permission name="android.permission.ACCESS_COARSE_LOCATION" />
+	<permission name="android.permission.READ_PHONE_STATE" />
+	<permission name="android.permission.SEND_SMS" />
+	<permission name="android.permission.CALL_PHONE" />
+	<permission name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+	<permission name="com.samsung.android.permisson.ACCESS_SYSTEM_KEY_DISPATCHING" />
+	<permission name="android.permission.WRITE_SECURE_SETTINGS" />
+	<permission name="android.permission.CONTROL_INCALL_EXPERIENCE" />
+	<permission name="android.permission.READ_FRAME_BUFFER" />
+ </privapp-permissions>
+</permissions>

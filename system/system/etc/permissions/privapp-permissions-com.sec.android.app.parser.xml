@@ -1,0 +1,9 @@
+<permissions>
+    <privapp-permissions package="com.sec.android.app.parser">
+
+    <!--Add protected permissions for DRParser here -->
+	<permission name="com.sec.permission.preconfig" />
+	<permission name="android.permission.MODIFY_PHONE_STATE" />
+
+    </privapp-permissions>
+</permissions>

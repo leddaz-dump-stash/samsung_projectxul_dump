@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<permissions>
+    <privapp-permissions package="com.samsung.android.watch.weather">
+        <permission name="com.samsung.android.wear.retailmode.permission.RETAILMODE"/>
+    </privapp-permissions>
+</permissions>

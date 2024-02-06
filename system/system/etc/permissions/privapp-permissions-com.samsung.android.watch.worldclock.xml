@@ -1,0 +1,5 @@
+<permissions>
+    <privapp-permissions package="com.samsung.android.watch.worldclock">
+	<permission name="android.permission.STOP_APP_SWITCHES"/>
+    </privapp-permissions>
+</permissions>

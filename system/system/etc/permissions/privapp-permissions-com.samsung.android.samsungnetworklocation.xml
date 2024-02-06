@@ -1,0 +1,13 @@
+<!--
+    This XML file declares which signature|privileged permissions should be
+    granted to privileged applications that come with the platform
+    -->
+<permissions>
+    <privapp-permissions package="com.samsung.android.samsungnetworklocation">
+        <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+        <permission name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+        <permission name="com.samsung.android.security.permission.SAMSUNG_KEYSTORE_PERMISSION" />
+        <permission name="android.permission.READ_LOGS" />
+    </privapp-permissions>
+</permissions>

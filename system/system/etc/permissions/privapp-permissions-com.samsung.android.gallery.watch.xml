@@ -1,0 +1,5 @@
+<permissions>
+    <privapp-permissions package="com.samsung.android.gallery.watch">
+        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+    </privapp-permissions>
+</permissions>

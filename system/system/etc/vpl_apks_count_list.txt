@@ -1,0 +1,11 @@
+/system/preload/BudsController/BudsController.apk
+/system/preload/MSOutlook_Samsung/MSOutlook_Samsung.apk
+/system/preload/GlobalGoals/GlobalGoals.apk
+/system/preload/WatchMusic/WatchMusic.apk
+/system/preload/VoiceRecorderWatch/VoiceRecorderWatch.apk
+/system/preload/GlobalGoalsSpinWF/GlobalGoalsSpinWF.apk
+/system/preload/CalculatorWatch/CalculatorWatch.apk
+/system/preload/GlobalGoalsCountDownWF/GlobalGoalsCountDownWF.apk
+/system/preload/GlobalGoalsClassicWF/GlobalGoalsClassicWF.apk
+/system/preload/GlobalGoalsDigitalWF/GlobalGoalsDigitalWF.apk
+/system/preload/KnoxManage_Wear_Samsung/KnoxManage_Wear_Samsung.apk

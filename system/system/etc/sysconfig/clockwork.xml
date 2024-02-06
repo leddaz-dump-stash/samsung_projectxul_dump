@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- These are configurations that should exist on Google's own Nexus and GPe devices. -->
+<config>
+    <allow-in-power-save package="com.google.android.gms" />
+    <allow-in-data-usage-save package="com.google.android.gms" />
+    <allow-unthrottled-location package="com.google.android.gms" />
+    <allow-ignore-location-settings package="com.google.android.gms" />
+
+    <allow-in-power-save package="com.google.android.wearable.ambient" />
+    <allow-in-power-save package="com.google.android.apps.wearable.cellbroadcast" />
+    <allow-in-power-save package="com.google.android.apps.messaging" />
+    <allow-in-power-save package="com.google.android.googlequicksearchbox" />
+    <allow-in-power-save package="com.google.android.wearable.app" />
+
+    <allow-in-power-save-except-idle package="com.android.vending" />
+
+    <!--START entries copied from vendor/google/data/etc/sysconfig/google.xml-->
+
+    <!-- Certain broadcasts must still go to legacy implicit receivers -->
+    <allow-implicit-broadcast action="com.google.android.checkin.CHECKIN_COMPLETE" />
+    <allow-implicit-broadcast action="com.google.gservices.intent.action.GSERVICES_CHANGED" />
+    <allow-implicit-broadcast action="com.google.gservices.intent.action.GSERVICES_OVERRIDE" />
+    <allow-implicit-broadcast action="com.google.android.c2dm.intent.RECEIVE" />
+    <!-- TODO: This is a temporary workaround for allowing GmsCore to receive this broadcast.
+         This can be removed once OneTimeInitializer functionality is moved to GmsCore. -->
+    <allow-implicit-broadcast action="com.google.android.onetimeinitializer.ONE_TIME_INITIALIZED" />
+
+    <!-- OobConfig must always have network access to fetch enterprise and carrier lock config. -->
+    <allow-in-power-save-except-idle package="com.google.android.apps.work.oobconfig" />
+    <allow-in-data-usage-save package="com.google.android.apps.work.oobconfig" />
+
+    <!-- Allowlist of what components are permitted as backup data transports.  The
+         'service' attribute here is a flattened ComponentName string. -->
+    <backup-transport-whitelisted-service
+        service="com.google.android.gms/.backup.BackupTransportService" />
+
+    <!--END entries copied from vendor/google/data/etc/sysconfig/google.xml-->
+
+    <!-- needed by OEMSetup -->
+    <allow-implicit-broadcast action="com.google.android.wearable.action.GET_SETUP_DEFAULTS" />
+    <allow-implicit-broadcast action="com.google.android.wearable.action.GET_THEME_PROPERTY" />
+
+    <!-- needed by OEM Tutorial -->
+    <allow-implicit-broadcast action="com.google.android.clockwork.TUTORIAL_SKIPPED" />
+    <allow-implicit-broadcast action="com.google.android.clockwork.TUTORIAL_COMPLETED" />
+
+    <!-- needed for button presses -->
+    <allow-implicit-broadcast action="com.google.android.clockwork.home.action.FROM_HOME_STEM_DOUBLE_PRESSED" />
+    <allow-implicit-broadcast action="com.google.android.clockwork.home.action.FROM_HOME_STEM_LONG_PRESSED" />
+
+    <!-- needed by TWM -->
+    <allow-implicit-broadcast action="com.google.android.wearable.action.GET_TWM_WATCHFACE" />
+    <allow-implicit-broadcast action="com.google.android.wearable.action.TWM_WF_RECEIVED" />
+
+    <!--
+         Needed by retail mode to start apps that need to be included in retail
+         even if they are not already running.
+     -->
+    <allow-implicit-broadcast action="com.google.android.clockwork.home.retail.action.STARTED_RETAIL_DREAM" />
+    <allow-implicit-broadcast action="com.google.android.clockwork.home.retail.action.FINISHED_RETAIL_DREAM" />
+    <!--
+         Needed by setup to determine the device configuration as provided by
+         the partner's setup app.
+     -->
+    <allow-implicit-broadcast action="com.google.android.wearable.action.GET_SETUP_DEFAULTS" />
+    <allow-implicit-broadcast action="com.google.android.wearable.action.GET_SETUP_DEFAULTS_GUARDIAN_MODE" />
+
+    <!-- Receivers across various packages listen to the Ambient start/stop broadcasts. -->
+    <allow-implicit-broadcast action="com.google.android.wearable.action.AMBIENT_STARTED" />
+    <allow-implicit-broadcast action="com.google.android.wearable.action.AMBIENT_STOPPED" />
+
+    <!--Needed by charging UI-->
+    <allow-implicit-broadcast action="android.intent.action.ACTION_POWER_CONNECTED" />
+    <allow-implicit-broadcast action="android.intent.action.ACTION_POWER_DISCONNECTED" />
+
+    <!-- Needed to trigger generation of watch bugreport and screenshot from the companion. -->
+    <allow-implicit-broadcast action="com.google.android.clockwork.CREATE_SCREENSHOT" />
+    <allow-implicit-broadcast action="android.intent.action.BUG_REPORT" />
+    <allow-implicit-broadcast action="com.android.internal.intent.action.BUGREPORT_REQUESTED" />
+    <allow-implicit-broadcast action="com.android.internal.intent.action.BUGREPORT_FINISHED" />
+    <allow-implicit-broadcast action="android.intent.action.BUGREPORT_CANCEL" />
+    <allow-implicit-broadcast action="android.intent.action.BUGREPORT_SHARE" />
+    <allow-implicit-broadcast action="android.intent.action.BUGREPORT_INFO_LAUNCH" />
+    <allow-implicit-broadcast action="android.intent.action.BUGREPORT_SCREENSHOT" />
+
+    <!-- Needed by bluetooth headset paired -->
+    <allow-implicit-broadcast action="android.bluetooth.headsetclient.profile.action.AG_CALL_CHANGED" />
+    <allow-implicit-broadcast action="android.bluetooth.headsetclient.profile.action.AUDIO_STATE_CHANGED" />
+    <allow-implicit-broadcast action="android.bluetooth.headsetclient.profile.action.CONNECTION_STATE_CHANGED" />
+    <allow-implicit-broadcast action="android.bluetooth.adapter.action.STATE_CHANGED" />
+    <allow-implicit-broadcast action="android.bluetooth.device.action.UUID" />
+    <allow-implicit-broadcast action="android.bluetooth.device.action.BOND_STATE_CHANGED" />
+
+    <!-- Specify the explicit set of other applications whose app data directories are
+        accessible by other applications. -->
+    <app-data-isolation-whitelisted-app package="com.google.android.gms" />
+
+    <!-- Allows PpgStreamer to use the bugreport API -->
+    <bugreport-whitelisted package="com.google.android.apps.internal.wearables.ppgdatacollector" />
+
+</config>
+

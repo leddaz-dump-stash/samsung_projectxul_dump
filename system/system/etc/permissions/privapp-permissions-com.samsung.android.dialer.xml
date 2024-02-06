@@ -1,0 +1,7 @@
+<permissions>
+    <privapp-permissions package="com.samsung.android.dialer">
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>	
+        <permission name="android.permission.READ_PHONE_STATE"/>
+        <permission name="android.permission.CALL_PRIVILEGED"/>
+    </privapp-permissions>
+</permissions>

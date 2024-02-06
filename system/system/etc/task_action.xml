@@ -1,0 +1,69 @@
+<!--
+    type 1 : AccessibilityService
+    type 2 : Accessibility settings
+    type 3 : not Accessibility settings
+
+    task list :
+        talkback
+        mute_all_sound
+        color_correction
+        color_lens
+        universal_gestures
+        answer_calls
+        dismiss_alerts_and_calls
+        quick_launch
+-->
+
+
+<task-list>
+
+    <task name="talkback"
+        type="1"
+        key="secure/enabled_accessibility_services"
+        exclusive="mute_all_sound,universal_gestures"
+        needNotify="0" />
+
+    <task name="color_correction"
+        type="2"
+        key="secure/accessibility_display_daltonizer_enabled"
+        exclusive="color_lens"
+        needNotify="0" />
+
+    <task name="color_lens"
+        type="2"
+        key="secure/color_lens_switch"
+        exclusive="color_correction"
+        needNotify="0" />
+
+    <task name="mute_all_sound"
+        type="2"
+        key="system/all_sound_off"
+        exclusive="talkback"
+        needNotify="0" />
+
+    <task name="universal_gestures"
+        type="1"
+        key="secure/enabled_accessibility_services"
+        exclusive="talkback,answer_calls,dismiss_alerts_and_calls,quick_launch"
+        needNotify="0" />
+
+    <task name="answer_calls"
+        type="3"
+        key="global/setting_gesture_answer_on"
+        exclusive="universal_gestures"
+        needNotify="0" />
+
+    <task name="dismiss_alerts_and_calls"
+        type="3"
+        key="global/setting_gesture_dismiss_on"
+        exclusive="universal_gestures"
+        needNotify="0" />
+        
+    <task name="quick_launch"
+        type="3"
+        key="global/setting_gesture_launch_on"
+        exclusive="universal_gestures"
+        needNotify="0" />
+        
+</task-list>
+

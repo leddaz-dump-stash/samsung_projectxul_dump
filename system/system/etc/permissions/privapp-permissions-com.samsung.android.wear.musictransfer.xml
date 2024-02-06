@@ -1,0 +1,7 @@
+<permissions>
+    <privapp-permissions package="com.samsung.android.wear.musictransfer">
+        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+		<permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.LOCAL_MAC_ADDRESS"/>
+    </privapp-permissions>
+</permissions>

@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<records>
+<boot_file>/system/framework/services.jar</boot_file>
+<boot_file>/vendor/lib/egl/libGLES_mali.so</boot_file>
+</records>

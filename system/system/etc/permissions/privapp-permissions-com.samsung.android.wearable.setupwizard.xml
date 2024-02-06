@@ -1,0 +1,22 @@
+<permissions>
+    <privapp-permissions package="com.samsung.android.wearable.setupwizard">
+        <permission name="com.samsung.android.security.permission.SAMSUNG_KEYSTORE_PERMISSION" />
+        <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE" />
+        <permission name="com.sec.permission.preconfig" />
+        <permission name="android.permission.MASTER_CLEAR" />
+        <permission name="android.permission.SET_TIME_ZONE" />
+        <permission name="android.permission.GET_ACCOUNTS_PRIVILEGED" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+        <permission name="android.permission.BLUETOOTH_PRIVILEGED" />
+        <permission name="android.permission.SET_TIME" />
+        <permission name="android.permission.CHANGE_CONFIGURATION" />
+        <permission name="android.permission.LOCAL_MAC_ADDRESS" />
+        <permission name="android.permission.INTERACT_ACROSS_USERS" />
+        <permission name="android.permission.UPDATE_LOCK" />
+        <permission name="android.permission.REBOOT" />
+        <permission name="android.permission.MODIFY_PHONE_STATE" />
+        <permission name="android.permission.READ_LOGS" />
+		<permission name="com.samsung.android.permisson.ACCESS_SYSTEM_KEY_DISPATCHING"/>
+    </privapp-permissions>
+</permissions>

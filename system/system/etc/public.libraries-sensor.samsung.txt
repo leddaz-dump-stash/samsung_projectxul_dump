@@ -1,0 +1,5 @@
+lib_altitudetracker.sensor.samsung.so
+lib_fitnessengine.sensor.samsung.so
+lib_fc.sensor.samsung.so
+lib_secspo2post.sensor.samsung.so
+lib_spo2manual.sensor.samsung.so

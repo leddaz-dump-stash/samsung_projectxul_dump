@@ -1,0 +1,7 @@
+<permissions>
+    <privapp-permissions package="com.sec.nms">
+
+    <!--Add protected permissions for NMS here -->
+
+    </privapp-permissions>
+</permissions>

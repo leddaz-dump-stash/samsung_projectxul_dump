@@ -1,0 +1,8 @@
+<config>
+    <!-- Platform with this is landing on Houdini architecture, where SysUI and WCS are separated
+        apps. -->
+    <feature name="com.google.clockwork.wcs" />
+
+    <!-- Only platforms with this feature will receive WCS Play Store updates. -->
+    <feature name="com.google.clockwork.wcs.unbundled" />
+</config>

@@ -1,0 +1,6 @@
+<permissions>
+<privapp-permissions package="com.samsung.android.batterysavingsettings">
+    <permission name="android.permission.BATTERY_STATS"/>
+    <permission name="android.permission.REBOOT"/>
+</privapp-permissions>
+</permissions>

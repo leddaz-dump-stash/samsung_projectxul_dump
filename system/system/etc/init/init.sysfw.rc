@@ -1,0 +1,37 @@
+on init
+    softdog init
+    softdog settimeout 100  # including enable
+    softdog chmod 0660
+    softdog chown root system
+
+on post-fs-data
+    mkdir /data/log 0775 system log
+    mkdir /data/log/batterystats 0750 system log
+    mkdir /data/log/batterystats/usage 0750 system log
+    mkdir /data/log/cooldown 0750 system log
+
+on post-fs-data && property:ro.boot.debug_level=0x494d
+    mkdir /data/log/core 0777 system log
+
+on post-fs-data && property:ro.boot.debug_level=0x4f4c
+    mkdir /data/log/core 0775 system log
+
+on early-init && property:ro.boot.debug_level=0x494d
+    setprop debug.enable true
+on early-init && property:ro.boot.debug_level=0x4948
+    setprop debug.enable true
+on early-init && property:ro.product_ship=false
+    setprop debug.enable true
+on early-init && property:ro.build.type=userdebug
+    setprop debug.enable true
+on early-init && property:ro.build.type=eng
+    setprop debug.enable true
+on early-init && property:ro.boot.force_upload=0x5
+    setprop debug.enable true
+
+on property:ro.bootmode=charger  # LPM
+    softdog disable
+on property:ro.boot.verifiedbootstate=orange  # gsi/gki
+    setprop persist.vendor.softdog off
+on property:persist.vendor.softdog=off
+    softdog disable

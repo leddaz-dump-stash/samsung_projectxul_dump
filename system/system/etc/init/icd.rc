@@ -1,0 +1,14 @@
+# icd
+service icd /system/bin/icd
+    class main
+    user system
+    group system log
+    onrestart check_icd system
+    disabled
+    oneshot
+
+on early-fs
+# icd
+    check_icd system
+# start icd before vold
+    start icd

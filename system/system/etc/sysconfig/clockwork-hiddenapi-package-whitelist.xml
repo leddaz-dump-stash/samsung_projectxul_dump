@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2018 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License
+  -->
+
+<!--
+This XML file declares which platform apps that need to access internal APIs.
+-->
+<config>
+    <hidden-api-whitelisted-app package="com.android.connectivity.metrics" />
+    <hidden-api-whitelisted-app package="com.android.hotwordenrollment.okgoogle" />
+    <hidden-api-whitelisted-app package="com.android.inputmethod.latin" />
+    <hidden-api-whitelisted-app package="com.android.media.update" />
+    <hidden-api-whitelisted-app package="com.android.settingslib.robotests" />
+    <hidden-api-whitelisted-app package="com.android.simappdialog" />
+    <hidden-api-whitelisted-app package="com.android.statsd.dogfood" />
+    <hidden-api-whitelisted-app package="com.android.test.power" />
+    <hidden-api-whitelisted-app package="com.android.test.voiceenrollment" />
+    <hidden-api-whitelisted-app package="com.android.vending" />
+    <hidden-api-whitelisted-app package="com.example.android.apps.wearable.chargingscreen" />
+    <hidden-api-whitelisted-app package="com.example.android.apps.wearable.watchfaceprototyper" />
+    <hidden-api-whitelisted-app package="com.google.android.apps.wearable.bluetooth" />
+    <hidden-api-whitelisted-app package="com.google.android.apps.wearable.bugreportsender" />
+    <hidden-api-whitelisted-app package="com.google.android.apps.wearable.certifier" />
+    <hidden-api-whitelisted-app package="com.google.android.apps.wearable.chargingscreen" />
+    <hidden-api-whitelisted-app package="com.google.android.apps.wearable.settings" />
+    <hidden-api-whitelisted-app package="com.google.android.apps.wearable.setup" />
+    <hidden-api-whitelisted-app package="com.google.android.apps.wearable.systemui" />
+    <hidden-api-whitelisted-app package="com.google.android.clockwork.display" />
+    <hidden-api-whitelisted-app package="com.google.android.clockwork.flashlight" />
+    <hidden-api-whitelisted-app package="com.google.android.clockwork.lesetup" />
+    <hidden-api-whitelisted-app package="com.google.android.clockwork.leswitch" />
+    <hidden-api-whitelisted-app package="com.google.android.clockwork.timeonlymode" />
+    <hidden-api-whitelisted-app package="com.google.android.ext.services" />
+    <hidden-api-whitelisted-app package="com.google.android.feedback" />
+    <hidden-api-whitelisted-app package="com.google.android.gms" />
+    <hidden-api-whitelisted-app package="com.google.android.gsf" />
+    <hidden-api-whitelisted-app package="com.google.android.onetimeinitializer" />
+    <hidden-api-whitelisted-app package="com.google.android.packageinstaller" />
+    <hidden-api-whitelisted-app package="com.google.android.partner.provisioning" />
+    <hidden-api-whitelisted-app package="com.google.android.partnersetup" />
+    <hidden-api-whitelisted-app package="com.google.android.setupwizard" />
+    <hidden-api-whitelisted-app package="com.google.android.volta" />
+    <hidden-api-whitelisted-app package="com.google.android.wearable.ambient" />
+    <hidden-api-whitelisted-app package="com.google.android.wearable.app" />
+    <hidden-api-whitelisted-app package="com.google.android.wearable.frameworkpackagestubs" />
+    <hidden-api-whitelisted-app package="com.google.android.wearable.setupwizard" />
+</config>

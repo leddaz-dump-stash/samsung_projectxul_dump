@@ -1,0 +1,8 @@
+<permissions>
+    <privapp-permissions package="com.samsung.android.app.contacts">
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>	
+        <permission name="android.permission.READ_PHONE_STATE"/>
+        <permission name="android.permission.CALL_PRIVILEGED"/>
+        <permission name="com.samsung.android.wear.retailmode.permission.RETAILMODE"/>
+    </privapp-permissions>
+</permissions>

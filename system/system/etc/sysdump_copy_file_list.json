@@ -1,0 +1,84 @@
+{
+    "log": [
+        {
+            "source": "/sdcard/Android/data/bluetooth",
+            "target": "bluetooth"
+        },
+        {
+            "source": "/data/system/users/service/data",
+            "target": ""
+        },
+        {
+            "source": "/data/radio",
+            "target": ""
+        },
+        {
+            "source": "/data/vendor/log/wifi",
+            "target": "wifi"
+        },
+        {
+            "source": "/data/vendor/biometrics/log",
+            "target": "fp"
+        },
+        {
+            "source": "/data/vendor/log/chg",
+            "target": "chg"
+        },
+        {
+            "source": "/data/vendor/uwb/uwblog",
+            "target": "uwb/uwblog"
+        },
+        {
+            "source": "/data/log",
+            "target": ""
+        },
+        {
+            "source": "/data/slog",
+            "target": ""
+        },
+        {
+            "source": "/data/cp_log",
+            "target": "cp"
+        },        
+        {
+            "source": "/data/anr",
+            "target": ""
+        },
+        {
+            "source": "/data/sec/log",
+            "target": ""
+        },
+        {
+            "source": "/data/vendor/log/cbd",
+            "target": ""
+        },
+        {
+            "source": "/data/vendor/log/audiopcm",
+            "target": "audiopcm"
+        },
+        {
+            "source": "/data/vendor/log/abox",
+            "target": "abox"
+        },
+        {
+            "source": "/data/vendor/log/vaultkeeper",
+            "target": "vaultkeeper"
+        },
+        {
+            "source": "/data/vendor/camera/logdump",
+            "target": "seccam"
+        },
+        {
+            "source": "/data/vendor/ssrdump",
+            "target": ""
+        },
+        {
+            "source": "/data/vendor/log/err",
+            "target": "err"
+        },
+        {
+            "source": "/cache/recovery",
+            "target": "recovery"
+        }
+    ]
+}

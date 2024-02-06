@@ -1,0 +1,8 @@
+/(vendor|system/vendor)/bin/hw/vendor\.google_clockwork\.displayoffload\@1\.0-service	u:object_r:hal_displayoffload_default_exec:s0
+/storage/emulated(/.*)?         u:object_r:media_rw_data_file:s0
+/data/system/time(/.*)?  u:object_r:system_time_data_file:s0
+/dev/task_integrity                     u:object_r:system_integrity_device:s0
+/system/bin/sysproxy     u:object_r:sysproxy_exec:s0
+/system/bin/setup_fs     u:object_r:setup_fs_exec:s0
+/system/bin/sysproxyd    u:object_r:sysproxyd_exec:s0
+/system/bin/poweranimation          u:object_r:bootanim_exec:s0

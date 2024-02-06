@@ -1,0 +1,5 @@
+# rscmgr rc file
+
+on property:sys.readahead.alarm=1
+    readahead /system/priv-app/AlarmWatch/AlarmWatch.apk --fully
+    setprop sys.readahead.alarm 0

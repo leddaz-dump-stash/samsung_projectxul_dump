@@ -1,0 +1,7 @@
+<permissions>
+    <privapp-permissions package="com.samsung.watch.numbersync">
+
+    <!--Add protected permissions for DRParser here -->
+
+    </privapp-permissions>
+</permissions>

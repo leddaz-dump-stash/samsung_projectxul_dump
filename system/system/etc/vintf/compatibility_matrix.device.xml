@@ -1,0 +1,444 @@
+<!--
+    Input:
+        framework_compatibility_matrix.xml
+        framework_compatibility_matrix.xml
+        vendor.samsung.hardware.hqm@1.0-matrix.xml
+        vendor.samsung.hardware.tlc.iccc@1.0-matrix.xml
+        skeymaster_v4_framework_compatibility_matrix.xml
+        framework_compatibility_matrix.xml
+        tlc_payment_compatibility_matrix.xml
+        framework_compatibility_matrix.xml
+        framework_compatibility_matrix.xml
+        framework_compatibility_matrix.xml
+        framework_compatibility_matrix.xml
+        framework_compatibility_matrix.xml
+        radio_framework_compatibility_matrix_ss.xml
+        framework_compatibility_matrix.xml
+        framework_compatibility_matrix.xml
+        framework_compatibility_matrix.xml
+        framework_compatibility_matrix.xml
+        framework_compatibility_matrix.xml
+        framework_compatibility_matrix.xml
+        framework_compatibility_matrix.xml
+        framework_compatibility_matrix.xml
+        device_framework_compatibility_matrix.xml
+-->
+<compatibility-matrix version="2.0" type="framework">
+    <hal format="hidl" optional="true">
+        <name>android.hardware.audio</name>
+        <version>6.0</version>
+        <interface>
+            <name>IDevicesFactory</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.audio.effect</name>
+        <version>6.0</version>
+        <interface>
+            <name>IEffectsFactory</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.bluetooth</name>
+        <version>1.0</version>
+        <interface>
+            <name>IBluetoothHci</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.gatekeeper</name>
+        <version>1.0</version>
+        <interface>
+            <name>IGatekeeper</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.graphics.allocator</name>
+        <version>4.0</version>
+        <interface>
+            <name>IAllocator</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.graphics.composer</name>
+        <version>2.1</version>
+        <interface>
+            <name>IComposer</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.graphics.mapper</name>
+        <version>4.0</version>
+        <interface>
+            <name>IMapper</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.health</name>
+        <version>2.1</version>
+        <interface>
+            <name>IHealth</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.keymaster</name>
+        <version>4.0</version>
+        <interface>
+            <name>IKeymasterDevice</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.keymaster</name>
+        <version>4.0</version>
+        <interface>
+            <name>IKeymasterDevice</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.light</name>
+        <interface>
+            <name>ILights</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.media.omx</name>
+        <version>1.0</version>
+        <interface>
+            <name>IOmx</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.media.omx</name>
+        <version>1.0</version>
+        <interface>
+            <name>IOmxStore</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.memtrack</name>
+        <version>1.0</version>
+        <interface>
+            <name>IMemtrack</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.nfc</name>
+        <version>1.2</version>
+        <interface>
+            <name>INfc</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.renderscript</name>
+        <version>1.0</version>
+        <interface>
+            <name>IDevice</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.secure_element</name>
+        <version>1.2</version>
+        <interface>
+            <name>ISecureElement</name>
+            <instance>eSE1</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.soundtrigger</name>
+        <version>2.0</version>
+        <interface>
+            <name>ISoundTriggerHw</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.thermal</name>
+        <version>1.0</version>
+        <interface>
+            <name>IThermal</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.thermal</name>
+        <version>2.0</version>
+        <interface>
+            <name>IThermal</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.usb</name>
+        <version>1.1</version>
+        <interface>
+            <name>IUsb</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.vibrator</name>
+        <interface>
+            <name>IVibrator</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>com.dsi.ant</name>
+        <version>1.0</version>
+        <interface>
+            <name>IAnt</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.google_clockwork.displayoffload</name>
+        <version>1.0</version>
+        <interface>
+            <name>IDisplayOffload</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.bluetooth</name>
+        <version>2.0</version>
+        <interface>
+            <name>ISehBluetooth</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.bluetooth.a2dp</name>
+        <version>1.0</version>
+        <interface>
+            <name>ISehBluetoothAudioOffload</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="false">
+        <name>vendor.samsung.hardware.gnss</name>
+        <version>2.0</version>
+        <interface>
+            <name>ISehGnss</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.health</name>
+        <version>2.0</version>
+        <interface>
+            <name>ISehHealth</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.hqm</name>
+        <version>1.0</version>
+        <interface>
+            <name>ISehHqm</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.samsung.hardware.hyper</name>
+        <interface>
+            <name>ISehHyPer</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.miscpower</name>
+        <version>2.0</version>
+        <interface>
+            <name>ISehMiscPower</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.nfc</name>
+        <version>2.0</version>
+        <interface>
+            <name>ISehNfc</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.radio</name>
+        <version>2.1</version>
+        <interface>
+            <name>ISehRadio</name>
+            <instance>slot1</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.radio.bridge</name>
+        <version>2.0</version>
+        <interface>
+            <name>ISehBridge</name>
+            <instance>slot1</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.radio.channel</name>
+        <version>2.0</version>
+        <interface>
+            <name>ISehChannel</name>
+            <instance>epdgd</instance>
+            <instance>imsd</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.security.drk</name>
+        <version>2.0</version>
+        <interface>
+            <name>ISehDrk</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.security.engmode</name>
+        <version>1.0</version>
+        <interface>
+            <name>ISehEngmode</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.security.wsm</name>
+        <version>1.0</version>
+        <interface>
+            <name>ISehWsm</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.tlc.iccc</name>
+        <version>1.0</version>
+        <interface>
+            <name>ISehIccc</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.tlc.payment</name>
+        <version>1.0</version>
+        <interface>
+            <name>ISehTlcPayment</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.wifi</name>
+        <version>2.0-1</version>
+        <interface>
+            <name>ISehWifi</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.wifi.hostapd</name>
+        <version>1.0</version>
+        <interface>
+            <name>ISemHostapd</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.wifi.supplicant</name>
+        <version>3.0</version>
+        <interface>
+            <name>ISehSupplicant</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung_slsi.hardware.ExynosA2DPOffload</name>
+        <version>3.0</version>
+        <interface>
+            <name>IExynosA2DPOffload</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung_slsi.hardware.ExynosHWCServiceTW</name>
+        <version>1.0</version>
+        <interface>
+            <name>IExynosHWCServiceTW</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung_slsi.hardware.audio_dump</name>
+        <version>1.0</version>
+        <interface>
+            <name>IAudioDump</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung_slsi.hardware.configstore</name>
+        <version>1.0</version>
+        <interface>
+            <name>IExynosHWCConfigs</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung_slsi.hardware.epic</name>
+        <version>1.0</version>
+        <interface>
+            <name>IEpicRequest</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung_slsi.hardware.wifi.supplicant</name>
+        <version>1.0</version>
+        <interface>
+            <name>ISupplicantVendor</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.trustonic.tee</name>
+        <version>1.1</version>
+        <interface>
+            <name>ITee</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.trustonic.tee.tui</name>
+        <version>1.0</version>
+        <interface>
+            <name>ITui</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <sepolicy>
+        <kernel-sepolicy-version>30</kernel-sepolicy-version>
+        <sepolicy-version>26.0</sepolicy-version>
+        <sepolicy-version>27.0</sepolicy-version>
+        <sepolicy-version>28.0</sepolicy-version>
+        <sepolicy-version>29.0</sepolicy-version>
+        <sepolicy-version>30.0</sepolicy-version>
+    </sepolicy>
+    <avb>
+        <vbmeta-version>1.0</vbmeta-version>
+    </avb>
+</compatibility-matrix>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<allowlist>
+    <allowed-packages>
+        <!-- TODO: Need to review later -->
+        <package name="com.sec.android.app.samsungapps"/>
+        <package name="com.samsung.android.watch.watchface.*"/>
+    </allowed-packages>
+
+    <restricted-packages>
+        <package name="com.samsung.*"/>
+        <package name="com.sec.*"/>
+    </restricted-packages>
+
+    <restricted-intents>
+        <intent action="android.intent.action.BATTERY_CHANGED"/>
+        <intent action="android.intent.action.BOOT_COMPLETED"/>
+        <intent action="android.intent.action.PACKAGE_ADDED"/>
+        <intent action="android.intent.action.PACKAGE_CHANGED"/>
+        <intent action="android.intent.action.PACKAGE_FULLY_REMOVED"/>
+        <intent action="android.intent.action.PACKAGE_REMOVED"/>
+        <intent action="android.intent.action.PACKAGE_REPLACED"/>
+        <intent action="android.net.conn.CONNECTIVITY_CHANGE"/>
+    </restricted-intents>
+
+    <intent action="android.intent.action.BOOT_COMPLETED">
+        <package name="com.sec.factory"/>
+        <package name="com.sec.android.app.factorykeystring"/>
+        <package name="com.samsung.android.aircommandmanager"/>
+        <package name="com.samsung.android.bixby.wakeup"/>
+        <package name="com.samsung.android.permissioncontroller"/>
+        <package name="com.samsung.android.GEDFactoryTestLauncher" />
+        <package name="com.samsung.android.watch.alarm"/>
+        <package name="com.samsung.android.calendar"/>
+        <package name="com.samsung.android.app.contacts"/>
+        <package name="com.sec.imsservice"/>
+        <package name="com.sec.nms"/>
+        <package name="com.samsung.galaxybetaservicewatch"/>
+        <package name="com.samsung.android.shealthmonitor"/>
+		<package name="com.samsung.android.service.health"/>
+    </intent>
+
+    <intent action="android.intent.action.PACKAGE_ADDED">
+        <package name="com.samsung.android.wcs.extension"/>
+        <package name="com.samsung.SMT"/>
+        <package name="com.samsung.android.wearable.sysui"/>
+        <package name="com.samsung.android.permissioncontroller"/>
+        <package name="com.sec.imsservice"/>
+        <package name="com.samsung.android.wear.retailmode"/>
+    </intent>
+ 
+    <intent action="android.intent.action.PACKAGE_REMOVED">
+        <package name="com.samsung.android.wcs.extension"/>
+        <package name="com.samsung.SMT"/>
+        <package name="com.samsung.android.wearable.sysui"/>
+        <package name="com.samsung.android.permissioncontroller"/>
+        <package name="com.sec.imsservice"/>
+        <package name="com.samsung.android.wear.retailmode"/>
+    </intent>
+
+    <intent action="android.intent.action.PACKAGE_REPLACED">
+        <package name="com.samsung.android.permissioncontroller"/>
+        <package name="com.sec.imsservice"/>
+    </intent>
+ 
+    <intent action="android.intent.action.PACKAGE_CHANGED">
+        <package name="com.samsung.android.wcs.extension"/>
+        <package name="com.samsung.SMT"/>
+        <package name="com.samsung.android.wearable.sysui"/>
+        <package name="com.samsung.android.permissioncontroller"/>
+        <package name="com.samsung.android.wear.retailmode"/>
+    </intent>
+
+    <intent action="android.intent.action.PACKAGE_FULLY_REMOVED">
+        <package name="com.samsung.android.wearable.sysui"/>
+		<package name="com.samsung.android.permissioncontroller"/>
+    </intent>
+
+    <intent action="android.intent.action.BATTERY_CHANGED">
+        <package name="com.sec.factory"/>
+	<package name="com.samsung.android.wearable.sysui"/>
+        <package name="com.samsung.android.batterysavingsettings"/>
+        <package name="com.samsung.android.GEDFactoryTestLauncher" />
+    	<package name="com.samsung.android.app.mobiledoctor.ve"/>
+        <package name="com.sec.imsservice"/>
+    </intent>
+
+    <intent action="android.net.conn.CONNECTIVITY_CHANGE">
+        <package name="com.sec.nms"/>
+    </intent>
+
+</allowlist>
