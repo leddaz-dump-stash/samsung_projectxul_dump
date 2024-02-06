@@ -1,0 +1,205 @@
+on post-fs-data
+    chown system system /sys/class/sensors/accelerometer_sensor/reactive_alert
+    chown system system /sys/class/sensors/accelerometer_sensor/calibration
+    chown system system /sys/class/sensors/accelerometer_sensor/selftest
+    chown system system /sys/class/sensors/accelerometer_sensor1/reactive_alert
+    chown system system /sys/class/sensors/accelerometer_sensor1/calibration
+    chown system system /sys/class/sensors/accelerometer_sensor1/selftest
+    chown system system /sys/class/sensors/pressure_sensor/calibration
+    chown system radio /sys/class/sensors/barometer_sensor/sw_offset
+    chown system system /sys/class/sensors/ecg_sensor/mode
+    chown system system /sys/class/sensors/ecg_sensor/reg
+    chown system system /sys/class/sensors/bia_sensor/frequency
+    chown system system /sys/class/sensors/bia_sensor/mode
+    chown system system /sys/class/sensors/bia_sensor/nv_param_write
+    chown system system /sys/class/sensors/bia_sensor/nv_param_read
+    chown system system /sys/class/sensors/bia_sensor/trim
+    chown system system /sys/class/sensors/bia_sensor/curr
+    chown system system /sys/class/sensors/bia_sensor/sub_imp
+    chown system system /sys/class/sensors/bia_sensor/low_imp
+    chown system system /sys/class/sensors/bia_sensor/mid_imp
+    chown system system /sys/class/sensors/bia_sensor/high_imp
+    chown system system /sys/class/sensors/hrm_sensor/hrm_eol
+    chown system system /sys/class/sensors/hrm_sensor/hrm_xtalk2
+    chown system system /sys/class/sensors/hrm_sensor/ioctl
+    chown system system /sys/class/sensors/light_sensor/light_cal
+    chown system system /sys/class/sensors/magnetic_sensor/calibration
+    chown system system /sys/class/sensors/magnetic_sensor/matrix
+    chown system system /sys/class/sensors/magnetic_sensor/raw_data
+    chown system system /sys/class/sensors/digital_hall/backup_restore_auto_cal
+    chown system system /sys/class/sensors/digital_hall/test_start
+    chown system system /sys/class/sensors/ssp_sensor/accel32g_poll_delay
+    chown system system /sys/class/sensors/ssp_sensor/accel_poll_delay
+    chown system system /sys/class/sensors/ssp_sensor/bia_fac_poll_delay
+    chown system system /sys/class/sensors/ssp_sensor/bia_raw_poll_delay
+    chown system system /sys/class/sensors/ssp_sensor/ecg_fac_poll_delay
+    chown system system /sys/class/sensors/ssp_sensor/ecg_lib_poll_delay
+    chown system system /sys/class/sensors/ssp_sensor/enable
+    chown system system /sys/class/sensors/ssp_sensor/gyro_poll_delay
+    chown system system /sys/class/sensors/ssp_sensor/hrm_lib_poll_delay
+    chown system system /sys/class/sensors/ssp_sensor/hrm_poll_delay
+    chown system system /sys/class/sensors/ssp_sensor/hub_state
+    chown system system /sys/class/sensors/ssp_sensor/light_poll_delay
+    chown system system /sys/class/sensors/ssp_sensor/mcu_sleep_test
+    chown system system /sys/class/sensors/ssp_sensor/mcu_test
+    chown system system /sys/class/sensors/ssp_sensor/pressure_poll_delay
+    chown system system /sys/class/sensors/ssp_sensor/sensor_reg_dump
+    chown system system /sys/class/sensors/ssp_sensor/sensor_stuck_reg_dump
+    chown system system /sys/class/sensors/ssp_sensor/set_cal_data
+    chown system system /sys/class/sensors/ssp_sensor/uncal_gyro_poll_delay
+    chown system system /sys/class/sensors/temperature_sensor/jig
+    mkdir /data/vendor/w_sensorhub 0770 system system
+    mkdir /data/vendor/log/w_sensorhub 0774 system log
+    chown system system /sys/class/sensors/ssp_sensor/shub_dump
+    chown system system /sys/kernel/debug/nanohub/log
+
+    chown system system /dev/ssp_sensorhub
+    chown system system /dev/batch_io
+    chown system system /dev/iio:device0
+    chown system system /dev/iio:device1
+    chown system system /dev/iio:device2
+    chown system system /dev/iio:device3
+    chown system system /dev/iio:device4
+    chown system system /dev/iio:device5
+    chown system system /dev/iio:device6
+    chown system system /dev/iio:device7
+    chown system system /dev/iio:device8
+    chown system system /dev/iio:device9
+    chown system system /dev/iio:device10
+    chown system system /dev/iio:device11
+    chown system system /dev/iio:device12
+    chown system system /dev/iio:device13
+    chown system system /dev/iio:device14
+    chown system system /dev/iio:device15
+    chown system system /dev/iio:device16
+    chown system system /dev/iio:device17
+    chown system system /dev/iio:device18
+    chown system system /dev/iio:device19
+    chown system system /dev/iio:device20
+    chown system system /dev/iio:device21
+    chown system system /dev/iio:device22
+    chown system system /dev/iio:device23
+
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device0/buffer/enable
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device1/buffer/enable
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device2/buffer/enable
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device3/buffer/enable
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device4/buffer/enable
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device5/buffer/enable
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device6/buffer/enable
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device7/buffer/enable
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device8/buffer/enable
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device9/buffer/enable
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device10/buffer/enable
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device11/buffer/enable
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device12/buffer/enable
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device13/buffer/enable
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device14/buffer/enable
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device15/buffer/enable
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device16/buffer/enable
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device17/buffer/enable
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device18/buffer/enable
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device19/buffer/enable
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device20/buffer/enable
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device21/buffer/enable
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device22/buffer/enable
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device23/buffer/enable
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device0/buffer/length
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device1/buffer/length
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device2/buffer/length
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device3/buffer/length
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device4/buffer/length
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device5/buffer/length
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device6/buffer/length
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device7/buffer/length
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device8/buffer/length
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device9/buffer/length
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device10/buffer/length
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device11/buffer/length
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device12/buffer/length
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device13/buffer/length
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device14/buffer/length
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device15/buffer/length
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device16/buffer/length
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device17/buffer/length
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device18/buffer/length
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device19/buffer/length
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device20/buffer/length
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device21/buffer/length
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device22/buffer/length
+    chown system system /sys/devices/platform/12a30000.contexthub/iio:device23/buffer/length
+
+    chmod 0660 /dev/ssp_sensorhub
+    chmod 0660 /dev/batch_io
+    chmod 0660 /dev/iio:device0
+    chmod 0660 /dev/iio:device1
+    chmod 0660 /dev/iio:device2
+    chmod 0660 /dev/iio:device3
+    chmod 0660 /dev/iio:device4
+    chmod 0660 /dev/iio:device5
+    chmod 0660 /dev/iio:device6
+    chmod 0660 /dev/iio:device7
+    chmod 0660 /dev/iio:device8
+    chmod 0660 /dev/iio:device9
+    chmod 0660 /dev/iio:device10
+    chmod 0660 /dev/iio:device11
+    chmod 0660 /dev/iio:device12
+    chmod 0660 /dev/iio:device13
+    chmod 0660 /dev/iio:device14
+    chmod 0660 /dev/iio:device15
+    chmod 0660 /dev/iio:device16
+    chmod 0660 /dev/iio:device17
+    chmod 0660 /dev/iio:device18
+    chmod 0660 /dev/iio:device19
+    chmod 0660 /dev/iio:device20
+    chmod 0660 /dev/iio:device21
+    chmod 0660 /dev/iio:device22
+    chmod 0060 /dev/iio:device23
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device0/buffer/enable
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device1/buffer/enable
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device2/buffer/enable
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device3/buffer/enable
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device4/buffer/enable
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device5/buffer/enable
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device6/buffer/enable
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device7/buffer/enable
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device8/buffer/enable
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device9/buffer/enable
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device10/buffer/enable
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device11/buffer/enable
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device12/buffer/enable
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device13/buffer/enable
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device14/buffer/enable
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device15/buffer/enable
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device16/buffer/enable
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device17/buffer/enable
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device18/buffer/enable
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device19/buffer/enable
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device20/buffer/enable
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device21/buffer/enable
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device22/buffer/enable
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device23/buffer/enable
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device0/buffer/length
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device1/buffer/length
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device2/buffer/length
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device3/buffer/length
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device4/buffer/length
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device5/buffer/length
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device6/buffer/length
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device7/buffer/length
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device8/buffer/length
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device9/buffer/length
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device10/buffer/length
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device11/buffer/length
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device12/buffer/length
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device13/buffer/length
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device14/buffer/length
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device15/buffer/length
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device16/buffer/length
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device17/buffer/length
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device18/buffer/length
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device19/buffer/length
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device20/buffer/length
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device21/buffer/length
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device22/buffer/length
+    chmod 0660 /sys/devices/platform/12a30000.contexthub/iio:device23/buffer/length

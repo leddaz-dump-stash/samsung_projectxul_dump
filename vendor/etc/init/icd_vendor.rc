@@ -1,0 +1,14 @@
+# icd
+service icd_vendor /vendor/bin/icd_vendor
+    class main
+    user system
+    group system log
+    onrestart check_icd vendor
+    disabled
+    oneshot
+
+on early-fs
+# icd
+    check_icd vendor
+# start icd before vold
+    start icd_vendor

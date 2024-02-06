@@ -1,0 +1,4 @@
+service hqmserv /vendor/bin/hw/vendor.samsung.hardware.hqm@1.0-service
+    class hal
+    user system
+    group system

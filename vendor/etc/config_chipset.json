@@ -1,0 +1,70 @@
+{
+  "Resources": [
+    {
+      "Name": "CPUMaxFreq",
+      "ID": "0x12001002",
+      "Handler": "sysfs",
+      "FreqTablePath": "/sys/devices/system/cpu/cpufreq/policy0/scaling_available_frequencies",
+      "BoostPath": "/sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq",
+      "DefaultValue": "100%",
+      "Priority": "low",
+      "ViewLog": "1"
+    },
+    {
+      "Name": "CPUMinFreq",
+      "ID": "0x12001001",
+      "Handler": "sysfs",
+      "FreqTablePath": "/sys/devices/system/cpu/cpufreq/policy0/scaling_available_frequencies",
+      "BoostPath": "/sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq",
+      "DefaultValue": "0%",
+      "Priority": "high",
+      "ViewLog": "1",
+      "HighFreqLimitNum": "2"
+    },
+    {
+      "Name": "LPMDisable",
+      "ID": "0x10003000",
+      "Handler": "sysfs",
+      "FreqTablePath": "",
+      "BoostPath": "/sys/module/cpuidle/parameters/off",
+      "DefaultValue": "0",
+      "Priority": "high",
+      "Values": [
+        "0",
+        "1"
+      ]
+    }
+  ],
+  "Hints": [
+    {
+      "Hint": "POWER_HINT_USER_INTERACTION",
+      "ResoureList": [
+        {
+            "Resource" : "CPUMinFreq",
+            "Value" : "800000"
+        },
+        {
+            "Resource" : "LPMDisable",
+            "Value" : "1"
+        }
+      ]
+    },
+    {
+      "Hint": "POWER_HINT_APP_LAUNCH",
+      "ResoureList": [
+        {
+          "Resource": "CPUMinFreq",
+          "Value": "100%"
+        },
+        {
+          "Resource": "MIFMinFreq",
+          "Value": "100%"
+        },
+        {
+          "Resource": "LPMDisable",
+          "Value": "1"
+        }
+      ]
+    }
+  ]
+}

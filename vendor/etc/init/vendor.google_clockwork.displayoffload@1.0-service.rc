@@ -1,0 +1,4 @@
+service displayoffload /vendor/bin/hw/vendor.google_clockwork.displayoffload@1.0-service
+    class hal
+    user system
+    group system

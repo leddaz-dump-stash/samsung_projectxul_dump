@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+<unavailable-feature name="android.software.autofill"/>
+<unavailable-feature name="android.software.print"/>
+<unavailable-feature name="android.hardware.screen.landscape"/>
+</permissions>

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hwparam_document [
+<!ELEMENT hwparam_document (hwparam_setting, hwparam_info+)>
+<!ELEMENT hwparam_setting ANY>
+<!ATTLIST hwparam_setting
+    enable CDATA #REQUIRED
+    DVServer CDATA #REQUIRED
+    DQServer CDATA #REQUIRED    
+    CFServer CDATA #REQUIRED>
+<!ELEMENT hwparam_info ANY>
+<!ATTLIST hwparam_info
+      compID CDATA #REQUIRED
+      compVer CDATA #REQUIRED
+      compManufacture CDATA #REQUIRED
+      hitType CDATA #REQUIRED
+      feature CDATA #REQUIRED
+      order_compID CDATA #REQUIRED
+      order_feature CDATA #REQUIRED
+      uevent_path CDATA #IMPLIED>
+<!ELEMENT sysfs_node (key_info*)>
+<!ATTLIST sysfs_node
+      type CDATA #REQUIRED
+      key CDATA #REQUIRED
+      value CDATA #REQUIRED
+      clear CDATA #REQUIRED>
+<!ELEMENT dev_sysfs_node (key_info*)>
+<!ATTLIST dev_sysfs_node
+      type CDATA #REQUIRED
+      key CDATA #REQUIRED
+      value CDATA #REQUIRED
+      clear CDATA #REQUIRED>          
+<!ELEMENT enc_sysfs_node (key_info*)>
+<!ATTLIST enc_sysfs_node
+      type CDATA #REQUIRED
+      key CDATA #REQUIRED
+      value CDATA #REQUIRED
+      clear CDATA #REQUIRED>
+<!ELEMENT data_info (key_info*)>
+<!ATTLIST data_info
+      interface CDATA #REQUIRED
+      type1 CDATA #REQUIRED
+      type2 CDATA #REQUIRED
+      type3 CDATA #REQUIRED>
+<!ELEMENT key_info EMPTY>
+<!ATTLIST key_info
+      keyname CDATA #REQUIRED
+      min CDATA #REQUIRED
+      max CDATA #REQUIRED
+      desc1 CDATA #REQUIRED
+      desc2 CDATA #REQUIRED
+      desc3 CDATA #REQUIRED
+      desc4 CDATA #REQUIRED
+      type1 CDATA #REQUIRED
+      type2 CDATA #REQUIRED>
+]>
+
+<hwparam_document>
+
+    <hwparam_setting enable="true" DVServer="true" DQServer="true" CFServer="false" />
+    
+    <!-- Device : AP -->
+    <hwparam_info compID="AP" feature="SYSC" hitType="sm" compVer="0.0" compManufacture="" order_compID="1" order_feature="1" >
+        <sysfs_node type="S" key="AP" value="/sys/devices/system/chip-id/product_id" clear="0" >
+            <key_info keyname="AP" min="" max="" desc1="Application Processer" desc2="" desc3="" desc4="" type1="1" type2="10" />
+        </sysfs_node>
+        <sysfs_node type="S" key="EVT" value="/sys/devices/system/chip-id/evt_ver" clear="0" >
+            <key_info keyname="EVT" min="" max="" desc1="Application EVT Version" desc2="" desc3="" desc4="" type1="1" type2="10" />
+        </sysfs_node>
+
+        <sysfs_node type="S" key="PCB" value="/efs/FactoryApp/control_no" clear="0" >
+            <key_info keyname="PCB" min="" max="" desc1="PCB Info." desc2="" desc3="" desc4="" type1="1" type2="10" />
+        </sysfs_node>
+        <sysfs_node type="S" key="SMD" value="/efs/FactoryApp/HwPartSMDDate" clear="0" >
+            <key_info keyname="SMD" min="" max="" desc1="SMD Date" desc2="" desc3="" desc4="" type1="1" type2="10" />
+        </sysfs_node>
+        <sysfs_node type="M" key="AP_INFO" value="/sys/class/sec/sec_hw_param/ap_info" clear="0" >
+            <key_info keyname="HW_REV" min="" max="" desc1="HW revision" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="ASV" min="0" max="15" desc1="ASV" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="IDS" min="0" max="15" desc1="IDS" desc2="" desc3="" desc4="" type1="1" type2="0" />
+        </sysfs_node>
+        <sysfs_node type="M" key="AP_INFO" value="/data/system/users/service/data/RC.p" clear="0" >
+            <key_info keyname="KP" min="" max="" desc1="Kernel panic" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="DP" min="" max="" desc1="Watchdog reset" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="PP" min="" max="" desc1="Power reset" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="PF_EX" min="" max="" desc1="System server crash" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="PF_NT" min="" max="" desc1="System server native crash" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="PF_SF" min="" max="" desc1="Surfaceflinger native crash" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="PF_WD" min="" max="" desc1="System server watchdog" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="MP" min="" max="" desc1="Manual reset" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="SP" min="" max="" desc1="SMPL" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="WP" min="" max="" desc1="WTSR" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="RP" min="" max="" desc1="User reset" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="BP" min="" max="" desc1="Bootloader reset" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="NP" min="" max="" desc1="Power on" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="TP" min="" max="" desc1="Thermal reset" desc2="" desc3="" desc4="" type1="1" type2="99" />
+        </sysfs_node>
+    </hwparam_info>
+
+    <hwparam_info compID="AP" feature="DDRV" hitType="sm" compVer="0.0" compManufacture="" order_compID="1" order_feature="2" >
+        <sysfs_node type="M" key="DDR_INFO" value="/sys/class/sec/sec_hw_param/ddr_info" clear="0" />
+
+    </hwparam_info>
+    <!-- Device : Memory -->
+    <hwparam_info compID="UFS" feature="" hitType="" compVer="" compManufacture="" order_compID="2" order_feature="1" >        
+    </hwparam_info>
+
+    <!-- Device : eMMC / Storage -->
+    <hwparam_info compID="MMC" feature="EMMC" hitType="sm" compVer="0.0" compManufacture="" order_compID="2" order_feature="1" >
+      <condition_info path="/sys/class/sec/mmc/mmc_data" value="" >
+        <sysfs_node type="M" key="" value="/sys/class/sec/mmc/mmc_data" clear="0" >
+            <key_info keyname="GE" min="" max="" desc1="General Error" desc2="" desc3="" desc4="" type1="1" type2="0"/>
+            <key_info keyname="CC" min="" max="" desc1="Card Controller Error" desc2="" desc3="" desc4="" type1="1" type2="0"/>
+            <key_info keyname="ECC" min="0" max="100" desc1="Card ECC Error" desc2="" desc3="" desc4="" type1="1" type2="0"/>
+            <key_info keyname="WP" min="" max="" desc1="Write Protection Violation" desc2="" desc3="" desc4="" type1="1" type2="0"/>
+            <key_info keyname="OOR" min="" max="" desc1="Oot Of Range Error" desc2="" desc3="" desc4="" type1="1" type2="0"/>
+            <key_info keyname="CRC" min="" max="" desc1="CRC Error" desc2="" desc3="" desc4="" type1="1" type2="0"/>
+            <key_info keyname="TMO" min="0" max="200" desc1="Timeout Error" desc2="" desc3="" desc4="" type1="1" type2="0"/>
+            <key_info keyname="HALT" min="" max="" desc1="Halt unhalt Error" desc2="" desc3="" desc4="" type1="1" type2="0"/>
+            <key_info keyname="CQED" min="" max="" desc1="CQ enable disable Error" desc2="" desc3="" desc4="" type1="1" type2="0"/>
+            <key_info keyname="RPMB" min="" max="" desc1="RPMB switch Error" desc2="" desc3="" desc4="" type1="1" type2="0"/>
+        </sysfs_node>
+        <sysfs_node type="M" key="" value="/sys/class/sec/mmc/mmc_summary" clear="0" >
+            <key_info keyname="MANID" min="" max="" desc1="Manufacture ID" desc2="" desc3="" desc4="" type1="1" type2="0"/>
+            <key_info keyname="PNM" min="" max="" desc1="Product Name" desc2="" desc3="" desc4="" type1="1" type2="0"/>
+            <key_info keyname="REV" min="" max="" desc1="FW rev" desc2="" desc3="" desc4="" type1="1" type2="0"/>
+            <key_info keyname="CQ" min="" max="" desc1="Command Queue usage" desc2="" desc3="" desc4="" type1="1" type2="0"/>
+            <key_info keyname="SIZE" min="" max="" desc1="Storage capacity" desc2="" desc3="" desc4="" type1="1" type2="0"/>
+            <key_info keyname="SPEEDMODE" min="" max="" desc1="Current Bus Speed Mode" desc2="" desc3="" desc4="" type1="1" type2="0"/>
+            <key_info keyname="LIFE" min="" max="" desc1="Lifetime" desc2="" desc3="" desc4="" type1="1" type2="0"/>
+        </sysfs_node>
+        <sysfs_node type="M" key="" value="/sys/block/mmcblk0/diskios" clear="1" >
+            <key_info keyname="Hours" min="" max="" desc1="Elapsed Hours" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="ReadC" min="" max="" desc1="Read Count" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="ReadKB" min="" max="" desc1="Read KBs" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="WriteC" min="" max="" desc1="Write Count" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="WriteKB" min="" max="" desc1="Write KBs" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="DiscardC" min="" max="" desc1="Discard Count" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="DiscardKB" min="" max="" desc1="Discard KBs" desc2="" desc3="" desc4="" type1="1" type2="0" />
+        </sysfs_node>
+        <sysfs_node type="S" key="IC" value="/sys/class/sec/mmc/ic" clear="0" >
+        </sysfs_node>
+      </condition_info>
+    </hwparam_info>
+
+	<!-- Device : SDcard -->
+    <hwparam_info compID="SDcard" feature="" hitType="" compVer="" compManufacture="" order_compID="3" order_feature="1" >        
+    </hwparam_info>
+	
+    <!-- Device : Display -->
+    <hwparam_info compID="Display" feature="" hitType="" compVer="0.0" compManufacture="" order_compID="4" order_feature="1" >        
+    </hwparam_info>
+
+    <!-- Device : TSP -->
+    <hwparam_info compID="TSP" feature="TTSP" hitType="sm" compVer="0.0" compManufacture="" order_compID="5" order_feature="1" >
+    </hwparam_info>
+
+    <!-- Device : Battery -->
+    <hwparam_info compID="Battery" feature="BATT" hitType="sm" compVer="0.0" compManufacture="" order_compID="6" order_feature="1" >    
+        <sysfs_node type="M" key="CISD" value="/sys/class/power_supply/battery/cisd_data_json" clear="0" >
+            <key_info keyname="RESET_ALG" min="" max="" desc1="reset alg flag" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="ALG_INDEX" min="" max="" desc1="alg index" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="FULL_CNT" min="" max="" desc1="battery full count" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="VALERT_CNT" min="" max="" desc1="battery lowvoltage count" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="BATT_CYCLE" min="" max="" desc1="battery cycle" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="WIRELESS_CNT" min="" max="" desc1="wireless charging count" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="HIGH_SWELLING_CNT" min="" max="" desc1="high swelling count" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="LOW_SWELLING_CNT" min="" max="" desc1="low swelling count" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="SWELLING_FULL_CNT" min="" max="" desc1="swelling full count" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="SWELLING_RECOVERY_CNT" min="" max="" desc1="swelling recovery count" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="BATT_THM_MAX" min="" max="" desc1="batt_thm max value" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="BATT_THM_MIN" min="" max="" desc1="batt_thm min value" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="CHG_BATT_THM_MAX" min="" max="" desc1="during charging batt_thm max value" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="CHG_BATT_THM_MIN" min="" max="" desc1="during chargingbatt_thm min value" desc2="" desc3="" desc4="" type1="1" type2="99" />            <key_info keyname="CHG_USB_THM_MAX" min="" max="" desc1="during charging usb_thm max value" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="UNSAFETY_VOLT" min="" max="" desc1="unsafe voltage count" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="UNSAFETY_TEMP" min="" max="" desc1="unsafe temperature count" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="SAFETY_TIMER" min="" max="" desc1="safety timer expired count" desc2="" desc3="" desc4="" type1="1" type2="99" />
+         </sysfs_node>
+    </hwparam_info>
+
+    <hwparam_info compID="Battery" feature="BATD" hitType="sm" compVer="0.0" compManufacture="" order_compID="6" order_feature="2" >
+        <sysfs_node type="M" key="CISD_D" value="/sys/class/power_supply/battery/cisd_data_d_json" clear="0" >
+            <key_info keyname="FULL_CNT_D" min="" max="" desc1="battery full count per day" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="RECHARGING_CNT_D" min="0" max="" desc1="battery fullcap once" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="VALERT_CNT_D" min="" max="" desc1="battery lowvoltage count" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="WIRELESS_CNT_D" min="" max="" desc1="wireless charging count" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="HIGH_SWELLING_CNT_D" min="" max="" desc1="high swelling count" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="LOW_SWELLING_CNT_D" min="" max="" desc1="low swelling count" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="SWELLING_FULL_CNT_D" min="" max="" desc1="swelling full count" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="SWELLING_RECOVERY_CNT_D" min="" max="" desc1="swelling recovery count" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="BATT_THM_MAX_D" min="" max="" desc1="batt_thm max value" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="BATT_THM_MIN_D" min="" max="" desc1="batt_thm min value" desc2="" desc3="" desc4="" type1="1" type2="99" />            <key_info keyname="WPC_THM_MAX_D" min="" max="" desc1="wpc_thm max value" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="CHG_BATT_THM_MAX_D" min="" max="" desc1="during charging batt_thm max value" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="CHG_BATT_THM_MIN_D" min="" max="" desc1="during chargingbatt_thm min value" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="UNSAFETY_VOLT_D" min="" max="" desc1="unsafe voltage count" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="UNSAFETY_TEMP_D" min="" max="" desc1="unsafe temperature count" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="SAFETY_TIMER_D" min="" max="" desc1="safety timer expired count" desc2="" desc3="" desc4="" type1="1" type2="99" />
+            <key_info keyname="BUCK_OFF_D" min="" max="" desc1="buck off count" desc2="" desc3="" desc4="" type1="1" type2="99" />
+        </sysfs_node>
+    </hwparam_info>
+
+    <!-- Device : Overheat -->
+    <hwparam_info compID="Overheat" feature="" hitType="" compVer="" compManufacture="" order_compID="7" order_feature="1" >        
+    </hwparam_info>
+
+	<!-- Device : Power -->
+    <hwparam_info compID="Power" feature="" hitType="" compVer="" compManufacture="" order_compID="8" order_feature="1" >        
+    </hwparam_info>
+	
+	<!-- Device : Camera -->
+    <hwparam_info compID="Camera" feature="" hitType="" compVer="" compManufacture="" order_compID="9" order_feature="1" >       
+    </hwparam_info>
+
+    <!-- Device : Audio -->
+    <hwparam_info compID="Audio" feature="" hitType="" compVer="" compManufacture="" order_compID="10" order_feature ="1">
+    </hwparam_info>
+
+    <!-- Device : USB -->
+    <hwparam_info compID="USB" feature="UUSB" hitType="sm" compVer="0.0" compManufacture="" order_compID="11" order_feature="1" >
+    </hwparam_info>
+	
+	<!-- Device : Sensor -->
+    <hwparam_info compID="Sensor" feature="" hitType="" compVer="" compManufacture="" order_compID="12" order_feature ="1">        
+    </hwparam_info>
+		
+    <!-- Device : HRM -->
+    <hwparam_info compID="HRM" feature="" hitType="" compVer="" compManufacture="" order_compID="13" order_feature ="1" >        
+    </hwparam_info>
+
+	<!-- Device : Biometrics FingerPrint Sensor -->
+    <hwparam_info compID="BFS" feature="" hitType="" compVer="" compManufacture="" order_compID="14" order_feature="1" >        
+    </hwparam_info>	
+
+    <!-- Device : GNSS -->
+    <hwparam_info compID="GNSS" feature="" hitType="" compVer="" compManufacture="" order_compID="15" order_feature ="1">
+    </hwparam_info>    
+     
+    <!-- Device : NFC -->
+    <hwparam_info compID="NFC" feature="" hitType="" compVer="" compManufacture="" order_compID="16" order_feature ="2">        
+    </hwparam_info>
+
+    <!-- Device : Bluetooth -->
+    <hwparam_info compID="Bluetooth" feature="" hitType="" compVer="" compManufacture="" order_compID="17" order_feature ="1" >        
+    </hwparam_info>
+
+    <!-- Device : Wi-Fi -->
+    <hwparam_info compID="WiFi" feature="" hitType="" compVer="" compManufacture="" order_compID="18" order_feature ="1">        
+    </hwparam_info>
+
+    <!-- Device : Modem -->
+    <hwparam_info compID="Modem" feature="" hitType="" compVer="" compManufacture="" order_compID="19" order_feature ="1" >        
+    </hwparam_info>
+
+    <!-- Device : Filesystem -->
+    <hwparam_info compID="Filesystem" feature="F2FS" hitType="sm" compVer="0.0" compManufacture="" order_compID="20" order_feature ="1" >
+        <sysfs_node type="M" key="" value="/sys/fs/f2fs/userdata/sec_fs_stat" clear="0" >
+            <key_info keyname="F_BLOCKS" min="" max="" desc1="total data blocks in filesystem" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="F_BFREE" min="" max="" desc1="free blocks in filesystem" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="F_SFREE" min="" max="" desc1="free sections in filesystem" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="F_FILES" min="" max="" desc1="total file nodes in filesystem" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="F_FFREE" min="" max="" desc1="free file nodes in filesystem" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="F_FUSED" min="" max="" desc1="valid inode count in filesystem" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="F_NUSED" min="" max="" desc1="valid node count in filesystem" desc2="" desc3="" desc4="" type1="1" type2="0" />
+        </sysfs_node>
+        <sysfs_node type="M" key="" value="/sys/fs/f2fs/userdata/sec_gc_stat" clear="0" >
+            <key_info keyname="FGGC" min="" max="" desc1="Foreground garbage collection count" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="FGGC_NSEG" min="" max="" desc1="Number of victim node segments from foreground gc" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="FGGC_NBLK" min="" max="" desc1="Number of node blocks re-written by foreground gc" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="FGGC_DSEG" min="" max="" desc1="Number of victim data segments from foreground gc" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="FGGC_DBLK" min="" max="" desc1="Number of data blocks re-written by foreground gc" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="FGGC_TTIME" min="" max="" desc1="Total time of foreground gc" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="BGGC" min="" max="" desc1="Background garbage collection count" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="BGGC_NSEG" min="" max="" desc1="Number of victim node segments from background gc" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="BGGC_NBLK" min="" max="" desc1="Number of node blocks re-written by background gc" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="BGGC_DSEG" min="" max="" desc1="Number of victim data segments from background gc" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="BGGC_DBLK" min="" max="" desc1="Number of data blocks re-written by background gc" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="BGGC_TTIME" min="" max="" desc1="Total time of background gc" desc2="" desc3="" desc4="" type1="1" type2="0" />
+        </sysfs_node>
+        <sysfs_node type="M" key="" value="/sys/fs/f2fs/userdata/sec_io_stat" clear="0" >
+            <key_info keyname="CP" min="" max="" desc1="Total Checkpoint count" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="CPBG" min="" max="" desc1="Checkpoint count caused by balance fs" desc2="" desc3="" desc4="" type1="1" type2="0" />
+	    <key_info keyname="CPSYNC" min="" max="" desc1="Checkpoint count caused by fsync" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="CPNONRE" min="" max="" desc1="Checkpoint count caused by non regular file" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="CPSBNEED" min="" max="" desc1="Checkpoint count caused by sb need" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="CPWPINO" min="" max="" desc1="Checkpoint count caused by wrong parent ino" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="CP_MAX_INT" min="" max="" desc1="Max Checkpoint interval time" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="LFSSEG" min="" max="" desc1="Number of segment allocated in LFS type" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="SSRSEG" min="" max="" desc1="Number of segment allocated in SSR type" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="LFSBLK" min="" max="" desc1="Number of blocks allocated in LFS type" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="SSRBLK" min="" max="" desc1="Number of blocks allocated in SSR type" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="IPU" min="" max="" desc1="Inplace update count" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="FSYNC" min="" max="" desc1="Fsync count" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="FSYNC_MB" min="" max="" desc1="Size written by fsync" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="HOT_DATA" min="" max="" desc1="Size Written by database" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="COLD_DATA" min="" max="" desc1="Size Written by cold file" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="WARM_DATA" min="" max="" desc1="Size Written by warm file" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="MAX_INMEM" min="" max="" desc1="Max dirty pages of atomic file write" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="DROP_INMEM" min="" max="" desc1="Count of drop in-memory all when fail" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="DROP_INMEMF" min="" max="" desc1="Count of drop in-memory files when fail" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="WRITE_MB" min="" max="" desc1="Total written size" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="FS_PERROR" min="" max="" desc1="f2fs filesystem por error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="FS_ERROR" min="" max="" desc1="f2fs filesystem error count" desc2="" desc3="" desc4="" type1="1" type2="0" />
+        </sysfs_node>
+        <sysfs_node type="M" key="" value="/sys/fs/f2fs/userdata/sec_fsck_stat" clear="0" >
+            <key_info keyname="FSCK_RBYTES" min="" max="" desc1="fsck total read bytes" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="FSCK_WBYTES" min="" max="" desc1="fsck total written bytes" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="FSCK_TIME_MS" min="" max="" desc1="fsck total elasped time" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="FSCK_EXIT" min="" max="" desc1="fsck return code" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="FSCK_VNODES" min="" max="" desc1="valid node count" desc2="" desc3="" desc4="" type1="1" type2="0" />
+            <key_info keyname="FSCK_VINODES" min="" max="" desc1="valid inode count" desc2="" desc3="" desc4="" type1="1" type2="0" />
+        </sysfs_node>
+    </hwparam_info>
+
+</hwparam_document>
